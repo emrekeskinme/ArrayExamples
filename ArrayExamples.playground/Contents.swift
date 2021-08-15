@@ -26,3 +26,27 @@ for (i, s) in numbers2.enumerated() {
 }
 
 print("2x Numbers: \(numbers2) ")
+
+
+print("")
+print("---------------")
+print("")
+
+// Tek Çift Sayılar
+
+var tekCift:[Int] = [1,4,67,42,89,90,54,12,65,73,64,87]
+
+var tekler = [Int]()
+var ciftler = [Int]()
+
+for s in tekCift {
+    let islem = s % 2
+    if islem == 0 {
+        ciftler.append(s)
+    } else {
+        tekler.append(s)
+    }
+}
+
+print("Tek Sayılar: \(tekler)")
+print("Çift Sayılar: \(ciftler)")
