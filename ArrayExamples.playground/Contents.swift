@@ -50,3 +50,71 @@ for s in tekCift {
 
 print("Tek Sayılar: \(tekler)")
 print("Çift Sayılar: \(ciftler)")
+
+print("")
+print("---------------")
+print("")
+
+// Rastgele Sayılar
+
+var sayilar = [Int]()
+
+for _ in 1...10 {
+    let rastgeleSayi = arc4random_uniform(20)
+    
+    sayilar.append(Int(rastgeleSayi))
+}
+
+print(sayilar)
+
+print("")
+print("---------------")
+print("")
+
+// Karne Uygulaması
+
+var notlar = [Int]()
+var dersler = [String]()
+
+dersler.append("Tarih")
+notlar.append(20)
+
+dersler.append("Fizik")
+notlar.append(70)
+
+dersler.append("Matematik")
+notlar.append(85)
+
+dersler.append("Kimya")
+notlar.append(90)
+
+dersler.append("Biyoloji")
+notlar.append(70)
+
+var toplam = 0;
+
+for i in 0...((notlar.count)-1) {
+    print("\(dersler[i]): \(notlar[i])")
+    toplam = toplam + notlar[i]
+    
+}
+
+print("***************")
+print("Ortalama: \(toplam/dersler.count)")
+
+print("")
+print("---------------")
+print("")
+
+// İsim Arama
+
+var isimler = ["Ayşe", "Mehmet", "Bilge", "Cansu", "Deniz"]
+var kontrolIsim = "AHMET"
+
+for i in isimler {
+    if i == kontrolIsim{
+        print("Bu isim dizide mevcuttur.")
+    } else {
+        print("Dizede mevcut değildir.")
+    }
+}
